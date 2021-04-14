@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           
+        }
+        .anh{
+            height: 300px;
+            width: 70%;
+            
+        }
+        .anh img{
+            width: 100%;
+            height: 300px;
+            margin-left: 10%;
+        }
+        #butl{
+            padding: 15px 15px 15px 15px;
+            font-size: 40px;
+            color: white;
+            background-color: yellowgreen;
+            border-radius: 50%;
+            position: absolute;
+            left: 45%;
+            bottom: 0px;
+        }
+        #butr{
+            padding: 15px 15px 15px 15px;
+            font-size: 40px;
+            scolor: white;
+            background-color: yellowgreen;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            right: 45%;
+        }
+        .body{
+            position: relative;
+            height: 600px;
+            width: 100%;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="anh">
+            <img src="/ANH.png" alt="">
+        </div>
+        <div class="anh">
+            <img src="/LOGIN/lmht.webp" alt="">
+        </div>
+        <div class="anh">
+            <img src="/LOGIN/msi.jpg" alt="">
+        </div>
+        <div class="anh">
+            <img src="/LOGIN/levi.webp" alt="">
+        </div>
+        <BUTton type="button" onclick="funleft()" id="butl"><</BUTton>
+        <button type="button" onclick="funright()" id="butr">></button>
+    </div>
+   <SCript>
+       var lst = document.getElementsByClassName("anh");
+       var y =0;
+       for(x of lst)
+       {
+           x.style.display='none';
+       }
+       lst[y].style.display='block';
+
+       function funleft(){
+        for(x of lst)
+       {
+           x.style.display='none';
+       }
+       if(y==0) y=lst.length-1;
+       else y=y-1
+       lst[y].style.display='block';
+       }
+
+       function funright(){
+        for(x of lst)
+       {
+           x.style.display='none';
+       }
+       if(y==lst.length-1) y=0;
+       else y=y+1
+       lst[y].style.display='block';
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </SCript>
+    
+</body>
+</html>

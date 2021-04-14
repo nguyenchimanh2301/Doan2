@@ -1,0 +1,41 @@
+.html-div {
+    height: 150px ;width:60%;;text-align: center; 
+    margin-left:19%;
+    border: 1px solid;
+    }
+.anh {
+        height:"150px" width="60%" ;margin-top: 0.1px;margin-left:-0.5px
+       }
+.html2 div{
+    border: 1px solid;
+            margin: 20px;
+            margin-left:19%;
+            height: 500px ;width:40%;;float: left; text-align: center;
+}
+.def image{
+    width:"300px"; height:"270px"; 
+    margin-left:-50%; margin-top: 5%;
+}
+ul{
+    margin-left: 50%;margin-top: -35%;
+}
+p{color: red;margin-top: 10%;margin-left: -46%; font-size: large}
+.h3 image{width:"100px"; height:"100px"}
+.h4
+div {
+    height: 150px ;width:60%;;text-align: center;float: left;
+
+}
+p{font-size: larger;}
+
+div {
+    border: 1px solid;
+      margin: 20px;
+      margin-left:19%
+  }
+  li{ 
+      font-size: large;
+      color: black;
+      margin: 20px;
+  }
+ img{margin: 12px;}

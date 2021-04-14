@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #menu a{color:royalblue}
+        #menu ul{
+            background-color: salmon;
+            list-style-type: none;
+        }
+        #menu > ul > li {
+            display: inline-block;
+            width: 120px;
+            position: relative;
+            font-size: 14;
+            line-height: 60px;
+            text-align: center;
+        }
+        #menu ul li:hover{
+            background-color: seagreen;
+        }
+        .submenu{
+            display: none;
+            position: absolute;
+        }
+        #menu ul li:hover .submenu{ display: block;}
+        .submenu li {
+            font-size:14;
+            padding-left: 15px;
+            line-height: 30px;
+            width: 200px;
+            text-align: left;
+            position: relative;
+        }
+        .submenu1{ display: none;
+        position: absolute;
+        top: 0px;
+        right: -200px;
+        }
+        .submenu > li:hover .submenu1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section id="menu">
+        <ul>
+            <li>INONIA
+                <ul class="submenu">
+                    <LI>YASUO
+                        <ul class="submenu1">
+                            <li>tt7</li>
+                            <li>tt6</li>
+                        </ul>
+                    </LI>
+                    <li>ZED</li>
+                    <li>LEE</li>
+                </ul>
+            </li>
+
+            <li>NOXUS</li>
+            <li>PILTOVER
+                <ul class="submenu">
+                    <li>cailyn</li>
+                    <li>jace</li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+</body>
+</html>

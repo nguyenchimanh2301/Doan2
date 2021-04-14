@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            #menu a {
+                color: white;
+                text-decoration: none;
+            }
+            #menu ul {
+                background-color: cadetblue;
+                list-style-type: none;
+                float: right;
+            }
+            #menu > ul > li {
+                display: inline-block;
+                width: 120px;
+                position: relative;
+                font-size: 14;
+                line-height: 60px;
+                text-align: center;
+            }
+            #menu  ul li:hover {
+                background-color: red;
+            }
+            #menu  ul li:hover .submenu {
+                display: block;
+                }
+            .submenu { 
+                display: none;
+                position: absolute;
+            }
+            .submenu1 {
+                display: none;
+                position: absolute;
+                top: 0px;
+                right: -200px;
+            }
+           
+            .submenu > li:hover .submenu1 {
+                display: block;
+            }
+            .submenu li {
+                font-size: 14; 
+                padding-left: 15px;
+                line-height: 30px;
+                width: 200px;
+                text-align: left;
+                position: relative;
+            }
+            
+           
+        </style>
+
+    </head>
+    <body>
+        <section id="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Mục 1</a>
+                    <ul class="submenu">
+                        <li><a href="#">Mục 11</a>
+                            <ul class="submenu1">
+                                <li><a href="#">Mục 11-1</a></li>
+                                <li><a href="#">Mục 12-2</a></li>
+                                <li><a href="#">Mục 13-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mục 12</a></li>
+                        <li><a href="#">Mục 13</a>
+                            <ul class="submenu1">
+                                <li><a href="#">Mục 31-1</a></li>
+                                <li><a href="#">Mục 32-2</a></li>
+                                <li><a href="#">Mục 33-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Mục 2</a></li>
+                <li><a href="#">Mục 3</a></li>
+                <li><a href="#">Mục 4</a>
+                    <ul class="submenu">
+                        <li><a href="#">Mục 41</a></li>
+                        <li><a href="#">Mục 42</a></li>
+                        <li><a href="#">Mục 43</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mục 5</a></li>
+            </ul>
+        </section>
+</body>
+</html>

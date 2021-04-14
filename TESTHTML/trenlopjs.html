@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAHAHA</title>
+    <style>
+      h2 {
+        text-align: center;
+        padding-bottom: 100px;
+      }
+      input {
+        padding: 20px;
+      }
+      body {
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>GIAI PT BAC NHAT</h2>
+    <div>
+      NHAP A
+      <input id="aa" type="text" placeholder="nhap a" value="" />
+    </div>
+    <div>
+      NHAP B
+      <input id="bb" type="text" placeholder="nhap b" value="" />
+    </div>
+    <p id="ptbn"></p>
+    <script>
+      function tinh() {
+        var a = Number(document.getElementById("aa").value);
+        var b = Number(document.getElementById("bb").value);
+        var c;
+        if ((a = 0)) {
+          if ((b = 0)) {
+            c = "PT VO so NGHIEM";
+          } else {
+            c = "PT VO  NGHIEM";
+          }
+        } else {
+          c = -b+a;
+        }
+        document.getElementById("ptbn").innerHTML = c;
+      }
+    </script>
+    <button type="button" onclick="tinh()">Ket qua</button>
+  </body>
+</html>
